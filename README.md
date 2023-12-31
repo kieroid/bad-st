@@ -19,5 +19,5 @@ and when you're ready, just type `sudo make install`.
 
 credits
 -------
-suckless st "simple terminal"
+suckless st "simple terminal"<br/>
 Aurélien APTEL <aurelien dot aptel at gmail dot com> bt source code
