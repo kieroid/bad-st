@@ -11,6 +11,7 @@ patches that are included:
 * st-scrollback-mouse
 * st-scrollback-mouse-altscreen
 * st-scrollback-ringbuffer
+* st-anysize
 
 "how do i install?"
 ------------------
