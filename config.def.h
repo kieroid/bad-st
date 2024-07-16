@@ -94,7 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.5;
 
 
 /* an-old-hope colors (first 16 used by escape sequences) */
@@ -119,7 +119,7 @@ static const char *colorname[] = {
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	[256] = "#cbcdd2", // foreground
-	[257] = "#18181b", // background
+	[257] = "#000000", // background
 	[258] = "#4fb4d8", // cursor
 
 	"#cccccc",
