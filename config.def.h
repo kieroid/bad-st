@@ -96,46 +96,46 @@ unsigned int tabspaces = 8;
 /* bg opacity */
 float alpha = 0.8;
 
-/* Terminal colors (16 first used in escape sequence) */
+
+/* an-old-hope colors (first 16 used by escape sequences) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	[0] = "#323437",
-	[1] = "#ff5454",
-	[2] = "#8cc85f",
-	[3] = "#e3c78a",
-	[4] = "#80a0ff",
-	[5] = "#d183e8",
-	[6] = "#79dac8",
-	[7] = "#a1aab8",
+	"#3b3d45", /* black */
+	"#eb3d54", /* red */
+	"#78bd65", /* green */
+	"#e5cd52", /* yellow */
+	"#4fb4d8", /* blue */
+	"#c46eb1", /* magenta */
+	"#85e0c9", /* cyan */
+	"white",   /* white */
 
-	/* 8 bright colors */
-	[8] = "#7c8f8f",
-	[9] = "#ff5189",
-	[10] = "#36c692",
-	[11] = "#bfbf97",
-	[12] = "#74b2ff",
-	[13] = "#ae81ff",
-	[14] = "#85dc85",
-	[15] = "#e2637f",
-
-	[255] = 0,
+	"#525560", /* bright grey */
+	"#f1223e", /* bright red */
+	"#6cc653", /* bright green */
+	"#edcd2c", /* bright yellow */
+	"#21acde", /* bright blue */
+	"#ce64b7", /* bright magenta */
+	"#63e9c7", /* bright cyan */
+	"white",   /* bright white */
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	[256] = "#282a36",
-	[257] = "#f8f8f2",
-	[258] = "#080808",
-	[259]= "#eeeeee",
-};
+	[256] = "#cbcdd2", // foreground
+	[257] = "#18181b", // background
+	[258] = "#4fb4d8", // cursor
 
+	"#cccccc",
+	"#555555",
+	"gray90", /* default foreground colour */
+	"black", /* default background colour */
+};
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 259;
-unsigned int defaultbg = 258;
-unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 256;
+unsigned int defaultbg = 257;
+unsigned int defaultcs = 258;
+static unsigned int defaultrcs = 258;
 
 /*
  * Default shape of cursor
@@ -144,7 +144,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 4;
 
 /*
  * Default columns and rows numbers
