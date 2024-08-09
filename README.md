@@ -5,7 +5,12 @@ st is a simple terminal emulator for X which sucks less.
 
 patches that are included:
 --------------------------
-N/A
+* st-alpha
+* st-anysize
+* st-ligatures-alpha-scrollback-ringbuffer
+* st-scrollback-ringbuffer
+* st-scrollback-mouse
+* st-scrollback-float
 
 "how do i install?"
 ------------------
